@@ -27,7 +27,7 @@ var buffer = require('vinyl-buffer');
 var source = require('vinyl-source-stream');
 var through2 = require('through2');
 var watchify = require('watchify');
-var rigger = require('gulp-rigger'); 
+var rigger = require('gulp-rigger');
 
 /**
  * Compiles and deploys images.
@@ -179,10 +179,10 @@ gulp.task('templates', function() {
   return gulp.src(config.templates.entry)
     .pipe(rigger())
     .pipe($fileInclude(config.templates.fileInclude))
-    .pipe($size({
-      title: '[templates]',
-      gzip: true
-    }))
+    // .pipe($size({
+    //   title: '[templates]',
+    //   gzip: false
+    // }))
     .pipe(gulp.dest(config.templates.output));
 });
 
@@ -206,6 +206,6 @@ gulp.task('build', ['static', 'templates'], function()
     .pipe(refs.restore())
     .pipe($useref())
     .pipe($if(!config.env.skipRev, $revReplace()))
-    .pipe($if(!config.env.skipMinifyHTML, $if('*.html', $minifyHTML(config.build.minifyHTML))))
+    // .pipe($if(!config.env.skipMinifyHTML, $if('*.html', $minifyHTML(config.build.minifyHTML))))
     .pipe(gulp.dest(config.build.output));
 });
