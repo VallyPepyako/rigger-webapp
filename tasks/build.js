@@ -3,7 +3,7 @@
  * (c) v <v>
  */
 
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 var config = require('./.taskconfig');
 var del = require('del');
 var gulp = require('gulp');
