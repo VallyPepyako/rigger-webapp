@@ -5,7 +5,17 @@
  * @version 3.1 eng
  */
 
+// unncomment if you use png/jpg sprites (gulp sprites)
+// @import 'img-sprite';
 
+// .icon {
+//     display: inline-block ;
+//     position: relative;
+//     vertical-align: middle;
+//     display: -moz-inline-stack;
+//     zoom: 1;
+//     *display: inline;
+// }
 
 // =======================================================================//
 // CONNECTING FONTS                                                       //
@@ -61,9 +71,8 @@ $second-font: 'HelveticaNeue', sans-serif;
 
 
 // =======================================================================//
-// RESPONCIVE MIX IN                                                                //
+// RESPONCIVE MIX IN                                                      //
 // =======================================================================//
-
 
 /*for add responcive rules use @include respond-to(sm) {}  */
 
@@ -89,13 +98,11 @@ $second-font: 'HelveticaNeue', sans-serif;
 }
 
 
-
 // =======================================================================//
 //    System-wide configuration classes and the vertical rhythm           //
 // =======================================================================//
 
 html {}
-
 
 body {
 
@@ -104,7 +111,6 @@ body {
 }
 
 button, select {-webkit-appearance: none;}
-
 
 /* ALL IMAGE ARE RESPONCIVE */
 img {width: 100%; height: auto;}

@@ -178,11 +178,11 @@ gulp.task('static', ['images', 'videos', 'fonts', 'extras', 'styles', 'scripts']
 gulp.task('templates', function() {
   return gulp.src(config.templates.entry)
     .pipe(rigger())
-    // .pipe($fileInclude(config.templates.fileInclude))
-    // .pipe($size({
-    //   title: '[templates]',
-    //   gzip: false
-    // }))
+    .pipe($fileInclude(config.templates.fileInclude))
+    .pipe($size({
+      title: '[templates]',
+      gzip: false
+    }))
     .pipe(gulp.dest(config.templates.output));
 });
 

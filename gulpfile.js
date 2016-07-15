@@ -13,6 +13,8 @@ require('./tasks/clean');
 require('./tasks/wiredep');
 require('./tasks/build');
 require('./tasks/serve');
+require('./tasks/sprity');
+
 
 // Import packages.
 var config = require('./tasks/.taskconfig');

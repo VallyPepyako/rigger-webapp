@@ -31,7 +31,7 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 ## Tasks
 
 ```gulp --debug --watch --serve```: Compiles all assets/templates, serves the site and watches for file changes. Best used during development.
-
+```gulp sprites ```: Will create a png/jpeg sprites, for use please uncomment module in settings.scss
 ```gulp```: Builds the entire project in production.
 
 All tasks are broken into micro-tasks, check out the ```tasks``` folder for more details. Also see ```tasks/.taskconfig``` for more custom flags such as ```--skip-js-min```, ```--skip-css-min```, etc.
