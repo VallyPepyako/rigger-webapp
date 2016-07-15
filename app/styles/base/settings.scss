@@ -61,10 +61,12 @@ $second-font: 'HelveticaNeue', sans-serif;
 
 
 // =======================================================================//
-// MIXINS                                                                 //
+// RESPONCIVE MIX IN                                                                //
 // =======================================================================//
 
-/* RESPONCIVE MIX IN */
+
+/*for add responcive rules use @include respond-to(sm) {}  */
+
 @mixin respond-to($media) {
   @if $media == mobile {
     @media only screen and (max-width: 320px) { @content; }
