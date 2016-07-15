@@ -32,7 +32,7 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 
 ```gulp --debug --watch --serve```: Compiles all assets/templates, serves the site and watches for file changes. Best used during development.
 
-```gulp sprites ```: Will create a png/jpeg sprites, for use please uncomment module in settings.scss
+```gulp sprites ```: Will create a png/jpeg sprites, for use, please, uncomment module in settings.scss
 
 ```gulp```: Builds the entire project in production.
 

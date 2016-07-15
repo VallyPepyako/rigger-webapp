@@ -4,8 +4,12 @@
  *
  * @version 3.1 eng
  */
+// =======================================================================//
+// AUTOSPRITES TOOLS                                                      //
+// =======================================================================//
 
-// unncomment if you use png/jpg sprites (gulp sprites)
+// IMAGE SPRITES
+// unncomment if you use png/jpg sprites (gulp sprites) and paste icon like <i class="icon file-name"></i>
 // @import 'img-sprite';
 
 // .icon {
@@ -16,6 +20,9 @@
 //     zoom: 1;
 //     *display: inline;
 // }
+// SVG SPRITES
+// unncoment if use svg sprites (gulp svgsprites)
+// @import 'svgsprite';
 
 // =======================================================================//
 // CONNECTING FONTS                                                       //
