@@ -20,8 +20,10 @@
 //     zoom: 1;
 //     *display: inline;
 // }
+
+
 // SVG SPRITES
-// unncoment if use svg sprites (gulp svgsprites)
+// unncoment if use svg sprites (gulp svgsprites) and add sprites svg inline in index.html
 // @import 'svgsprite';
 
 // =======================================================================//
@@ -34,27 +36,27 @@
 /* connecting local fonts */
 @mixin font-face($font-family, $file-path) {
 
-	// Use http://everythingfonts.com/font-face
-  	@font-face {
-		font-family: $font-family;
-		src: url('../../fonts/' + $file-path + '/' + $file-path + '.eot');
-		src: url('../../fonts/' + $file-path + '/' + $file-path + '.eot') format('embedded-opentype'),
-			 url('../../fonts/' + $file-path + '/' + $file-path + '.woff2') format('woff2'),
-			 url('../../fonts/' + $file-path + '/' + $file-path + '.woff') format('woff'),
-			 url('../../fonts/' + $file-path + '/' + $file-path + '.ttf') format('truetype'),
-			 url('../../fonts/' + $file-path + '/' + $file-path + '.svg#TTDrugsThin') format('svg');
+    // Use http://everythingfonts.com/font-face
+    @font-face {
+        font-family: $font-family;
+        src: url('../../fonts/' + $file-path + '/' + $file-path + '.eot');
+        src: url('../../fonts/' + $file-path + '/' + $file-path + '.eot') format('embedded-opentype'),
+             url('../../fonts/' + $file-path + '/' + $file-path + '.woff2') format('woff2'),
+             url('../../fonts/' + $file-path + '/' + $file-path + '.woff') format('woff'),
+             url('../../fonts/' + $file-path + '/' + $file-path + '.ttf') format('truetype'),
+             url('../../fonts/' + $file-path + '/' + $file-path + '.svg#TTDrugsThin') format('svg');
 
-		font-weight: normal;
-		font-style: normal;
-	}
+        font-weight: normal;
+        font-style: normal;
+    }
 
-	// Chrome for Windows fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
-	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-		@font-face {
-			font-family: $font-family;
-			src: url('../fonts/' + $file-path + '/' + $file-path + '.svg##{$font-family}') format('svg');
-		}
-	}
+    // Chrome for Windows fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: $font-family;
+            src: url('../fonts/' + $file-path + '/' + $file-path + '.svg##{$font-family}') format('svg');
+        }
+    }
 }
 
 
@@ -69,11 +71,11 @@ $second-font: 'HelveticaNeue', sans-serif;
 
 /* Font micin */
 @mixin font-type($font-family, $font-size, $line-height, $letter-spacing, $color) {
-	font-family: $font-family;
-	font-size: $font-size;
-	line-height: $line-height;
-	letter-spacing: $letter-spacing;
-	color: $color;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
 }
 
 
@@ -113,8 +115,8 @@ html {}
 
 body {
 
-	/* VEBKIT FONT SMOOTHINF */
-	-webkit-font-smoothing: subpixel-antialiased;
+    /* VEBKIT FONT SMOOTHINF */
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 button, select {-webkit-appearance: none;}
@@ -186,11 +188,11 @@ strong, .strong {}
 em, .em {}
 
 a {
-	&:hover, &:focus, &:active, &:active:focus {outline: none;}
-	text-decoration: none;
+    &:hover, &:focus, &:active, &:active:focus {outline: none;}
+    text-decoration: none;
 
-	&:hover {}
-	&:active {}
+    &:hover {}
+    &:active {}
 }
 
 h1, .h1,
@@ -229,8 +231,8 @@ h6, .h6 {
 /* address */
 address, .address {
 
-	strong {}
-	a {}
+    strong {}
+    a {}
 }
 
 /* for some reason use title="" inside <abbr>.
@@ -242,30 +244,30 @@ abbr, .abbr {
 /* add .blockquote-reverse for right align. */
 blockquote {
 
-	/* use <p> inside <blockquote>  */
-	p {}
+    /* use <p> inside <blockquote>  */
+    p {}
 
-	footer {}
+    footer {}
 
-	/* <cite title="Source Title">Source Title</cite> */
-	cite {}
+    /* <cite title="Source Title">Source Title</cite> */
+    cite {}
 }
 
 /* System class for list .list-unstyled and .list-inline */
 ul {
-	li {
-	}
+    li {
+    }
 }
 
 ol {
-	li {}
+    li {}
 }
 
 
 /* ocation of terms and their definitions side by side in a line using .dl-horizontal () */
 dl {
-	dt {}
-	dd {}
+    dt {}
+    dd {}
 }
 
 /* Styling code and markings */
@@ -291,16 +293,16 @@ mark {}
 */
 
 .table {
-	thead {
-		tr {
-			th {}
-		}
-	}
-	tbody {
-		tr {
-			td {}
-		}
-	}
+    thead {
+        tr {
+            th {}
+        }
+    }
+    tbody {
+        tr {
+            td {}
+        }
+    }
 }
 
 /* Additional classes for tables
@@ -322,7 +324,7 @@ mark {}
 .has-error
 .has-feedback - for icons*/
 
-	label {}
+    label {}
 
 /*
 HTML5 input types: text, text, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, и color.
@@ -331,78 +333,78 @@ HTML5 input types: text, text, datetime, datetime-local, date, month, time, week
 
 .form {
 
-	.form-group {
+    .form-group {
 
-		.control-label {
+        .control-label {
 
-		}
+        }
 
-		.input_wrapper {
+        .input_wrapper {
 
-			select {}
-		}
+            select {}
+        }
 
-		.input-group-addon {}
+        .input-group-addon {}
 
-		/* The general style input, textarea, select */
-		.form-control {
+        /* The general style input, textarea, select */
+        .form-control {
 
-			/* hack anti mobile zoom */
-			font-size: 16px;
+            /* hack anti mobile zoom */
+            font-size: 16px;
 
-			&:focus,
-			&:active:focus {
-				border: none;
-				box-shadow: none;
-			}
-		}
+            &:focus,
+            &:active:focus {
+                border: none;
+                box-shadow: none;
+            }
+        }
 
-		/* Style for checkboxes*/
-		.checkbox {
-			/* use .checkbox-inline for inline checkbox*/
-			label {
-				input {
+        /* Style for checkboxes*/
+        .checkbox {
+            /* use .checkbox-inline for inline checkbox*/
+            label {
+                input {
 
-				}
-			}
-		}
-		/* Style for radiobutton */
-		.radio {
-			/* use .radio-inline for inline radiobutton */
-			label {
-				input {
+                }
+            }
+        }
+        /* Style for radiobutton */
+        .radio {
+            /* use .radio-inline for inline radiobutton */
+            label {
+                input {
 
-				}
-			}
-		}
+                }
+            }
+        }
 
-		.form-control-static {
+        .form-control-static {
 
-		}
+        }
 
-		.help-block {
+        .help-block {
 
-		}
-	}
+        }
+    }
 
-	.has-success {
-		.control-label {}
-		.form-control {}
-	}
-	.has-warning {
-		.control-label {}
-		.form-control {}
-	}
-	.has-error {
-		.control-label {}
-		.form-control {}
-	}
+    .has-success {
+        .control-label {}
+        .form-control {}
+    }
+    .has-warning {
+        .control-label {}
+        .form-control {}
+    }
+    .has-error {
+        .control-label {}
+        .form-control {}
+    }
 
-	.has-feedback {
-		.glyphicon {
+    .has-feedback {
+        .glyphicon {
 
-		}
-	}
+        }
+    }
 }
 
 // =======================================================================//
@@ -410,47 +412,47 @@ HTML5 input types: text, text, datetime, datetime-local, date, month, time, week
 // =======================================================================//
 
 .btn-submit {
-	&:hover, &:active, &:focus, &:active:focus {}
+    &:hover, &:active, &:focus, &:active:focus {}
 }
 
 .btn-default {
 
-	&:hover,
-	&:active,
-	&:focus,
-	&:active:focus {}
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {}
 
 }
 
 .btn-primary {
 
-	&:hover,
-	&:active,
-	&:focus,
-	&:active:focus {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
 
-	}
+    }
 }
 
 .btn-second {
 
-	&:hover,
-	&:active,
-	&:focus,
-	&:active:focus {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
 
-	}
+    }
 }
 
 .btn-next {
 
-	&:hover,
-	&:active,
-	&:focus,
-	&:active:focus {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
 
 
-	}
+    }
 }
 
 
