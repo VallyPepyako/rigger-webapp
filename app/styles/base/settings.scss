@@ -9,7 +9,7 @@
 // =======================================================================//
 
 // IMAGE SPRITES
-// unncomment if you use png/jpg sprites (gulp sprites) and paste icon like <i class="icon file-name"></i>
+// unncomment if you use png/jpg sprites (gulp sprites) and paste icon like <i class="icon icon-name"></i>
 // @import 'img-sprite';
 
 // .icon {
@@ -27,6 +27,11 @@
 // use fore insert icon <svg viewBox="0 0 100 100" class="icon icon-name">
 // <use xlink:href="#icon-name"></use></svg>
 // @import 'svgsprite';
+
+//SVG FONT
+// uncomment if you use svg icons font (gulp svgiconfont)  and paste icon like <i class="icon icon-name"></i>
+// @import 'svgicons';
+
 
 // =======================================================================//
 // CONNECTING FONTS                                                       //
@@ -71,7 +76,7 @@ $main-font: 'Roboto', sans-serif;
 $second-font: 'HelveticaNeue', sans-serif;
 
 
-/* Font micin */
+/* Font mixin */
 @mixin font-type($font-family, $font-size, $line-height, $letter-spacing, $color) {
     font-family: $font-family;
     font-size: $font-size;
