@@ -3,7 +3,7 @@
  *  (c) v <v>
  */
 
-// var config = require('./.taskconfig');
+var config = require('./.taskconfig');
 var gulp = require('gulp');
 
 var wiredep = require('wiredep').stream;
