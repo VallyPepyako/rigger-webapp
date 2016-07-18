@@ -161,15 +161,15 @@ var templates = {
 /**
  * Configuration for the 'wiredep' task.
  */
-var wiredep = {
-  entry: path.join(paths.src, '**', '*.' + patterns.templates),
-  output: paths.src,
-  wiredep: {
-    exclude: ['bootstrap-sass-official', 'modernizr'],
-    directory: 'bower_components',
-    ignorePath: /^(\.\.\/)*\.\./
-  }
-};
+// var wiredep = {
+//   entry: path.join(paths.src, '**', '*.' + patterns.templates),
+//   output: paths.src,
+//   wiredep: {
+//     exclude: ['bootstrap-sass-official', 'modernizr'],
+//     directory: 'bower_components',
+//     ignorePath: /^(\.\.\/)*\.\./
+//   }
+// };
 
 /**
  * Configuration for the 'build' task.
@@ -244,7 +244,7 @@ module.exports = {
   scripts: scripts,
   static: static,
   templates: templates,
-  wiredep: wiredep,
+  // wiredep: wiredep,
   build: build,
   serve: serve,
   watch: watch

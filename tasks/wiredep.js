@@ -3,16 +3,19 @@
  *  (c) v <v>
  */
 
-var config = require('./.taskconfig');
+// var config = require('./.taskconfig');
 var gulp = require('gulp');
+
 var wiredep = require('wiredep').stream;
 
-/**
- * Injects Bower components into template files.
- */
-gulp.task('wiredep', function()
-{
-  gulp.src(config.wiredep.entry)
-    .pipe(wiredep(config.wiredep.wiredep))
-    .pipe(gulp.dest(config.wiredep.output));
+// inject bower components
+gulp.task('bower', () => {
+
+  gulp.src('app/index.html')
+    .pipe(wiredep({
+      directory: 'bower_components',
+      exclude: ['bootstrap-sass', 'jquery', 'modernizr'],
+      ignorePath: /^(\.\.\/)*\.\./
+    }))
+    .pipe(gulp.dest('app/'));
 });
