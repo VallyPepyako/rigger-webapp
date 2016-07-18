@@ -24,6 +24,7 @@
     "gulp-iconfont": "^8.0.1",
     "gulp-iconfont-css": "^2.1.0",
     "gulp-if": "^1.2.5",
+    "gulp-ignore": "^2.0.1",
     "gulp-minify-html": "^1.0.1",
     "gulp-postcss": "^6.0.0",
     "gulp-replace": "^0.5.4",
