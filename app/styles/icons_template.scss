@@ -1,0 +1,55 @@
+$icon_font_name:"<%= fontName %>";
+@font-face {
+	font-family:$icon_font_name;
+	src: url('../../<%= fontPath %><%= fontName %>.eot');
+	src: url('../../<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+	url('../../<%= fontPath %><%= fontName %>.woff') format('woff'),
+	url('../../<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+	url('../../<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+<% _.each(glyphs, function(glyph) { %>.icon-<%= glyph.fileName %>,
+<% }); %>.last_selector {
+		&:before {
+			font-family:$icon_font_name;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: normal;
+			// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+			text-decoration: none;
+			text-transform: none;
+		}
+	}
+
+.icons_before_after {
+	&:before,
+	&:after {
+		font-family: $icon_font_name;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+.icons_after {
+	&:after {
+		font-family: $icon_font_name;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+<% _.each(glyphs, function(glyph) { %>.icon-<%= glyph.fileName %>:before {
+	content:'\<%= glyph.codePoint %>';
+}
+<% }); %>
