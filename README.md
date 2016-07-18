@@ -32,7 +32,10 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 
 ```gulp --debug --watch --serve```: Compiles all assets/templates, serves the site and watches for file changes. Best used during development.
 
-```gulp sprites ```: Will create a png/jpeg sprites, for use, please, uncomment module in settings.scss
+```gulp sprites ```: Will create a png/jpeg sprite, for use, please, uncomment module in settings.scss
+
+```gulp svgsprites ```: Will create svg sprite. 1. uncommet module in settings.scss 2. add sprite.svg inline after <body> 3. for using icon use <svg viewBox="0 0 100 100" class="icon icon-name">
+  <use xlink:href="#icon-name"></use>
 
 ```gulp svgsprites ```: Will create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss 
 
