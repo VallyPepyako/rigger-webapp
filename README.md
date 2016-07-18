@@ -34,7 +34,7 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 
 ```gulp sprites ```: Will create a png/jpeg sprite, for use, please, uncomment module in settings.scss
 
-```gulp svgsprites ```: Will create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss 
+```gulp svgsprites ```: Will create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss and svg4everybody.js in index html
 
 ```gulp```: Builds the entire project in production.
 
