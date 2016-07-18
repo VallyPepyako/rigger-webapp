@@ -34,6 +34,8 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 
 ```gulp sprites ```: Will create a png/jpeg sprites, for use, please, uncomment module in settings.scss
 
+```gulp svgsprites ```: Will create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss 
+
 ```gulp```: Builds the entire project in production.
 
 All tasks are broken into micro-tasks, check out the ```tasks``` folder for more details. Also see ```tasks/.taskconfig``` for more custom flags such as ```--skip-js-min```, ```--skip-css-min```, etc.
