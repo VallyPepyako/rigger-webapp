@@ -37,7 +37,7 @@ gulp.task('svgsprites', function () {
                 render: {
                     scss: {
                          dest:'../styles/base/svgsprite.scss',
-                         template:"./app/styles/base/svgsprite_template.scss"
+                         template:"./app/styles/base/_svgsprite_template.scss"
                     }
                 }
             }

@@ -28,7 +28,6 @@ var source = require('vinyl-source-stream');
 var through2 = require('through2');
 var watchify = require('watchify');
 var rigger = require('gulp-rigger');
-var gulpIgnore = require('gulp-ignore');
 
 /**
  * Compiles and deploys images.
@@ -86,7 +85,6 @@ gulp.task('extras', function()
 gulp.task('styles', function()
 {
   return gulp.src(config.styles.entry)
-  .pipe(gulpIgnore.exclude('*template'))
     .pipe($if(config.env.cssSourcemaps, $sourcemaps.init()))
     .pipe($sass(config.styles.sass).on('error', function(err) {
       $util.log($util.colors.red('[sass] error: ' + err.message));

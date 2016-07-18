@@ -12,7 +12,7 @@ var fontName = 'iconfont';
 gulp.task('svgiconfont', function () {
  gulp.src(['./app/images/icons/*.svg'])
      .pipe(iconfontCss({
-         path: 'app/styles/base/icons_template.scss',
+         path: 'app/styles/base/_icons_template.scss',
          fontName: fontName,
          targetPath: '../../../app/styles/base/svgicons.scss',
          fontPath: 'fonts/svgicons/',
