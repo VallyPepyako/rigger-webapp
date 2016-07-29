@@ -28,6 +28,7 @@ var source = require('vinyl-source-stream');
 var through2 = require('through2');
 var watchify = require('watchify');
 var rigger = require('gulp-rigger');
+var imagemin = require('gulp-imagemin');
 
 /**
  * Compiles and deploys images.
@@ -52,6 +53,7 @@ gulp.task('videos', function() {
       title: '[videos]',
       gzip: true
     }))
+    .pipe(imagemin())
     .pipe(gulp.dest(config.videos.output));
 });
 

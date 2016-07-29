@@ -5,8 +5,5 @@
     "modernizr": "~2.6.2",
     "jquery": "^2.2.4"
   },
-  "devDependencies": {
-
-  }
-
+  "devDependencies": {}
 }

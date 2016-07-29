@@ -1,7 +1,7 @@
 # webapp
 
-This project is scaffolded by [Yeoman](http://yeoman.io). See [generator-vars-webapp](https://github.com/andrewscwei/generator-vars-webapp.git) for more details.
-
+This project is based on [generator-vars-webapp](https://github.com/andrewscwei/generator-vars-webapp.git). Visit for more details.
+With jquery, bootstrap/bootsrapSASS and modernizr on board
 ## Usage
 
 Install node modules if they are not already installed:
@@ -34,13 +34,15 @@ Visit ```localhost:9000``` in browser; by default you should see 'Hello, World!'
 
 ```gulp sprites ```: Create a png/jpeg sprite, for use, please, uncomment module in settings.scss
 
-```gulp svgsprites ```: Create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss and svg4everybody.js in index.html
+```gulp svgsprites ```: Create a svg sprite from svg icon in images/icon folder uncomment module in settings.scss
 
 ```gulp svgiconfont ```: Create a svg icons font from svg icon in images/icon folder uncomment module in settings.scss
 
-```gulp bower ```: Add a plugin companents in to index.html
+```gulp bower ```: Add a plugin companents in index.html (use ```bower install <package name> --save ```)
 
-```gulp```: Builds the entire project in production.
+```gulp build```: Builds the entire project in production.(please, use ```gulp clean``` before builds prodaction version) use just gulp. 
+
+```gulp imgresize```: Create different sizes of image with prefix tr_, for correctly install please visit https://www.npmjs.com/package/gulp-image-resize, look more on base/setting.css BACKGROUND IMAGES RESPONSIVE MIX-IN
 
 All tasks are broken into micro-tasks, check out the ```tasks``` folder for more details. Also see ```tasks/.taskconfig``` for more custom flags such as ```--skip-js-min```, ```--skip-css-min```, etc.
 

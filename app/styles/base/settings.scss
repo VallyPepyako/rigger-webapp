@@ -24,13 +24,13 @@
 
 // SVG SPRITES
 // unncoment if use svg sprites (gulp svgsprites) and add sprites svg inline in index.html
-// use fore insert icon <svg viewBox="0 0 100 100" class="icon icon-name">
+// use fore insert icon <svg class="icon icon-name">
 // <use xlink:href="#icon-name"></use></svg>
-// @import 'svgsprite';
+// @import 'base/svgsprite';
 
 //SVG FONT
 // uncomment if you use svg icons font (gulp svgiconfont)  and paste icon like <i class="icon icon-name"></i>
-// @import 'svgicons';
+// @import 'base/svgicons';
 
 
 // =======================================================================//
@@ -66,6 +66,29 @@
     }
 }
 
+// =======================================================================//
+//    BACKGROUND IMAGES RESPONSIVE MIX-IN                                 //
+// =======================================================================//
+// uncomment for use responcive background, use "gulp imgresize" for create different size img.
+
+// @mixin bg-img ($file-name, $file-exp, $bg-size) {
+//     @media only screen and (min-width: 1301px) {
+//         background: url('../images/' + $file-name + '.' + $file-exp) center center no-repeat;
+//         background-size: $bg-size;
+//     }
+//     @media only screen and (max-width: 1300px) {
+//         background: url('../images/' + $file-name + '_dt' + '.' + $file-exp) center center no-repeat;
+//         background-size: $bg-size;
+//     }
+//     @media only screen and (max-width: 991px) {
+//         background: url('../images/' + $file-name + '_md' + '.' + $file-exp) center center no-repeat;
+//         background-size: $bg-size;
+//     }
+//     @media only screen and (max-width: 481px) {
+//         background: url('../images/' + $file-name + '_xs' + '.' + $file-exp) center center no-repeat;
+//         background-size: $bg-size;
+//     }
+// }
 
 // Add local fonts from mixin
 @include font-face(HelveticaNeue, 'HelveticaNeue');
@@ -73,7 +96,6 @@
 
 /* Identify Fonts*/
 $main-font: 'Roboto', sans-serif;
-$second-font: 'HelveticaNeue', sans-serif;
 
 
 /* Font mixin */
@@ -323,6 +345,14 @@ mark {}
 // =======================================================================//
 // FORMS                                                                  //
 // =======================================================================//
+
+// PLACEHOLDER MIX-IN
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+};
 
 /*  LABELS (for .form-group)
 ----------------

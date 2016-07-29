@@ -9,13 +9,13 @@ var gulp = require('gulp');
 var wiredep = require('wiredep').stream;
 
 // inject bower components
-gulp.task('bower', () => {
+gulp.task('bower', function() {
 
-  gulp.src('app/index.html')
+  gulp.src('app/templates/*.html')
     .pipe(wiredep({
       directory: 'bower_components',
       exclude: ['bootstrap-sass', 'jquery', 'modernizr'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('app/'));
+    .pipe(gulp.dest('app/templates/'));
 });

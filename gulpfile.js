@@ -15,7 +15,8 @@ require('./tasks/build');
 require('./tasks/serve');
 require('./tasks/sprity');
 require('./tasks/svgsprites');
-require('./tasks/svgiconfont')
+require('./tasks/svgiconfont');
+require('./tasks/imgresize')
 
 
 
