@@ -71,21 +71,21 @@
 // =======================================================================//
 // uncomment for use responcive background, use "gulp imgresize" for create different size img.
 
-// @mixin bg-img ($file-name, $file-exp, $bg-size) {
+// @mixin bg-img ($bg-color, $file-name, $file-exp, $bg-size) {
 //     @media only screen and (min-width: 1301px) {
-//         background: url('../images/' + $file-name + '.' + $file-exp) center center no-repeat;
+//         background:$bg-color url('../images/' + $file-name + '.' + $file-exp) center center no-repeat;
 //         background-size: $bg-size;
 //     }
 //     @media only screen and (max-width: 1300px) {
-//         background: url('../images/' + $file-name + '_dt' + '.' + $file-exp) center center no-repeat;
+//         background:$bg-color url('../images/' + $file-name + '_dt' + '.' + $file-exp) center center no-repeat;
 //         background-size: $bg-size;
 //     }
 //     @media only screen and (max-width: 991px) {
-//         background: url('../images/' + $file-name + '_md' + '.' + $file-exp) center center no-repeat;
+//         background:$bg-color url('../images/' + $file-name + '_md' + '.' + $file-exp) center center no-repeat;
 //         background-size: $bg-size;
 //     }
 //     @media only screen and (max-width: 481px) {
-//         background: url('../images/' + $file-name + '_xs' + '.' + $file-exp) center center no-repeat;
+//         background:$bg-color url('../images/' + $file-name + '_xs' + '.' + $file-exp) center center no-repeat;
 //         background-size: $bg-size;
 //     }
 // }
