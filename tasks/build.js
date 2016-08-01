@@ -41,6 +41,7 @@ gulp.task('images', function() {
       title: '[images]',
       gzip: true
     }))
+    .pipe(imagemin())
     .pipe(gulp.dest(config.images.output));
 });
 
@@ -53,7 +54,7 @@ gulp.task('videos', function() {
       title: '[videos]',
       gzip: true
     }))
-    .pipe(imagemin())
+    
     .pipe(gulp.dest(config.videos.output));
 });
 
