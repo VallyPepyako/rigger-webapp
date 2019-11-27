@@ -8,7 +8,7 @@
     "npm": ">=2.7.3"
   },
   "dependencies": {
-    "bootstrap": "~3.3.4",
+    "bootstrap": "~3.4.1",
     "jquery": "~2.1.x"
   },
   "devDependencies": {
